@@ -1,0 +1,91 @@
+body {
+    background-color: #455063;
+    color: #FAFAFA;
+    font-size: 15px;
+    font-family: Arial;
+    min-width: 280px;
+    padding: 5px;
+}
+body::after {
+	content: '';
+	display: block;
+	height: 50px;
+}
+div {
+    display: inline-block;
+    background-color: #212B3C;
+    color: #FAFAFA;
+    margin: 5px auto;
+    text-align: left;
+    padding: 5px;
+    height: fit-content;
+}
+.Header{
+	display: block;
+	text-align: center;
+}
+.Main-Stuff{
+	display: block;
+	text-align:center;
+}
+.Distance-Calculator{
+	display: block;
+	margin: auto;
+	text-align:center;
+}
+table {
+	width:100%;
+}
+label {
+	text-align: left;
+}
+input{
+	background-color: #1d3257;
+	color: #FAFAFA;
+	margin: 5px 0px 5px 0px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+a{
+    display: block;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+a.active {
+    background-color: #455063;
+}
+.art {
+	display: inline;
+}
+.art:hover{
+	color: black;
+	background-image: linear-gradient(to right, red, orange, yellow, cyan, blue, darkviolet);
+}
+select {
+	display: inline-block;
+	background-color: #1d3257;
+    color: #FAFAFA;
+}
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	padding: 0px;
+	color: #FAFAFA;
+	background-color: #212B3C;
+}
+ol {
+	list-style-position: inside;
+}
+li {
+	text-align: center;
+}

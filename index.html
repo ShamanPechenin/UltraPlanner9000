@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>UltraPlanner9000</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="Header">
+            <div>UltraPlanner9000</div>
+            <a style="display: inline-block; vertical-align: middle; margin-left: 30%; color: #AAAAAA;" href="ru.html">RU</a>
+            <a style="display: inline-block; vertical-align: middle; color: #AAAAAA;" href="index.html">LV</a>
+        </div>
+
+        <div class="Main-Stuff">
+            <table>
+            <tr>
+                <td align="right"><label for="length">Ceļa garums(km): </label></td>
+                <td align="left"><input type="number" id="length" onkeyup="calculate_result()"></td>
+            </tr>
+
+            <tr>
+                <td align="right"><label for="price-per-km">Cena par km: </label></td>
+                <td align="left"><input type="number" id="price-per-km" onkeyup="calculate_result()"></td>
+            </tr>
+
+            <tr>
+                <td align="right"><label for="time">Apstāšanās laiks(h): </label></td>
+                <td align="left"><input type="number" id="time" onkeyup="calculate_result()"></td>
+            </tr>
+
+            <tr>
+                <td align="right"><label for="price-per-h">Cena par 1h apstāšanās: </label></td>
+                <td align="left"><input type="number" id="price-per-h" onkeyup="calculate_result()"></td>
+            </tr>
+            </table>
+            <p>Rezultāts: <a style="display: inline;" id="result">0</a>€</p>
+        </div>
+        <div class="Distance-Calculator">
+            Maršruts:
+            <ol id="route"></ol>
+            <label for="add-city">Nākamā pilsēta:</label>
+            <select name="add-city" id="add-city">
+                <option value="Liepāja">Liepāja</option>
+                <option value="Ventspils">Ventspils</option>
+                <option value="Rīga">Rīga</option>
+                <option value="Jelgava">Jelgava</option>
+                <option value="Daugavpils">Daugavpils</option>
+                <option value="Valmiera">Valmiera</option>
+                <option value="Dušanbe">Dušanbe</option>
+            </select>
+            <input type="button" value="Pievienot pilsētu" onclick="add_city()">
+            <p>Rezultāts: <a style="display: inline;" id="route-result">0</a>km</p>
+        </div>
+
+        <footer>
+            <p>Copyright MAKSIMS, <a class="art">ARTJOMS</a>, SERGEJS, KIRILS INC. ALL RIGHTS RESERVED<br>
+        </footer>
+
+        <script src="planner.js"></script>
+    </body>
+</html>

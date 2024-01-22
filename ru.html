@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>UltraPlanner9000</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="Header">
+            <div>UltraPlanner9000</div>
+            <a style="display: inline-block; vertical-align: middle; margin-left: 30%; color: #AAAAAA;" href="ru.html">RU</a>
+            <a style="display: inline-block; vertical-align: middle; color: #AAAAAA;" href="index.html">LV</a>
+        </div>
+
+        <div class="Main-Stuff">
+            <table>
+            <tr>
+                <td align="right"><label for="length">Длина пути(км): </label></td>
+                <td align="left"><input type="number" id="length" onkeyup="calculate_result()"></td>
+            </tr>
+
+            <tr>
+                <td align="right"><label for="price-per-km">Цена за км: </label></td>
+                <td align="left"><input type="number" id="price-per-km" onkeyup="calculate_result()"></td>
+            </tr>
+
+            <tr>
+                <td align="right"><label for="time">Время остановок(h): </label></td>
+                <td align="left"><input type="number" id="time" onkeyup="calculate_result()"></td>
+            </tr>
+
+            <tr>
+                <td align="right"><label for="price-per-h">Цена за 1h остановки: </label></td>
+                <td align="left"><input type="number" id="price-per-h" onkeyup="calculate_result()"></td>
+            </tr>
+            </table>
+            <p>Результат: <a style="display: inline;" id="result">0</a>€</p>
+        </div>
+        <div class="Distance-Calculator">
+            Маршрут:
+            <ol id="route"></ol>
+            <label for="add-city">Следующий город:</label>
+            <select name="add-city" id="add-city">
+                <option value="Liepāja">Лиепая</option>
+                <option value="Ventspils">Вентспилс</option>
+                <option value="Rīga">Рига</option>
+                <option value="Jelgava">Елгава</option>
+                <option value="Daugavpils">Даугавпилс</option>
+                <option value="Valmiera">Валмиера</option>
+                <option value="Dušanbe">Душанбе</option>
+            </select>
+            <input type="button" value="Добавить город" onclick="add_city()">
+            <p>Результат: <a style="display: inline;" id="route-result">0</a>км</p>
+        </div>
+
+        <footer>
+            <p>Copyright MAKSIMS, <a class="art">ARTJOMS</a>, SERGEJS, KIRILS INC. ALL RIGHTS RESERVED<br>
+        </footer>
+
+        <script src="planner.js"></script>
+    </body>
+</html>
