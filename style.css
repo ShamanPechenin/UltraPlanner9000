@@ -65,6 +65,7 @@ a.active {
 }
 .art:hover{
 	color: black;
+	background-image: linear-gradient(to right, red, orange, yellow, cyan, blue, darkviolet);
 }
 select {
 	display: inline-block;
