@@ -3,7 +3,7 @@ body {
     color: #FAFAFA;
     font-size: 15px;
     font-family: Arial;
-    min-width: 280px;
+    min-width: fit-content;
     padding: 5px;
 }
 body::after {

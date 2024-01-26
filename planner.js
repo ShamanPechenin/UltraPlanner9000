@@ -54,8 +54,13 @@ cities_distances = {
 			}
 };
 
+function roundToThree(num) {
+    return +(Math.round(num + "e+3")  + "e-3");
+}
+
 function calculate_result(){
 	let price = length_input.value*km_price_input.value + time_input.value*time_price_input.value;
+	price = roundToThree(price);
 	result_obj.innerText  = price;
 }
 
