@@ -60,12 +60,19 @@ a{
 a.active {
     background-color: #455063;
 }
+@keyframes rainbow {
+	0% {background-position:0% 0%;}
+	50% {background-position:100% 0%;}
+	100% {background-position:200% 0%;}
+}
 .art {
 	display: inline;
 }
 .art:hover{
 	color: black;
-	background-image: linear-gradient(to right, red, orange, yellow, cyan, blue, darkviolet);
+	background: linear-gradient(to right, red, orange, yellow, cyan, blue, darkviolet);
+	background-size: 200% 200%;
+	animation: rainbow 5s ease infinite;
 }
 select {
 	display: inline-block;
