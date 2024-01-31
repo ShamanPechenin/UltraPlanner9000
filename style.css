@@ -19,6 +19,7 @@ div {
     text-align: left;
     padding: 5px;
     height: fit-content;
+    box-shadow: 3px 6px 8px 0px #1b256973;
 }
 .Header{
 	display: block;
