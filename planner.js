@@ -17,7 +17,8 @@ cities_distances = {
 			"Jelgava": 177,
 			"Daugavpils": 424,
 			"Valmiera": 317,
-			"Dušanbe": 4962
+			"Dušanbe": 4962,
+			"Gaiziņkalns": 349
 			},
 "Ventspils": {
 			"Ventspils": 0,
@@ -25,32 +26,41 @@ cities_distances = {
 			"Jelgava": 172,
 			"Daugavpils": 403,
 			"Valmiera": 289,
-			"Dušanbe": 4941
+			"Dušanbe": 4941,
+			"Gaiziņkalns": 327
 			},
 "Rīga": {
 			"Rīga": 0,
 			"Jelgava": 46.6,
 			"Daugavpils": 230,
 			"Valmiera": 107,
-			"Dušanbe": 4764
+			"Dušanbe": 4764,
+			"Gaiziņkalns": 130
 			},
 "Jelgava": {
 			"Jelgava": 0,
 			"Daugavpils": 232,
 			"Valmiera": 153,
-			"Dušanbe": 4784
+			"Dušanbe": 4784,
+			"Gaiziņkalns": 170
 			},
 "Daugavpils": {
 			"Daugavpils": 0,
 			"Valmiera": 243,
-			"Dušanbe": 4609
+			"Dušanbe": 4609,
+			"Gaiziņkalns": 146
 			},
 "Valmiera": {
 			"Valmiera": 0,
-			"Dušanbe": 4707
+			"Dušanbe": 4707,
+			"Gaiziņkalns": 99.2
 			},
 "Dušanbe": {
-			"Dušanbe": 0
+			"Dušanbe": 0,
+			"Gaiziņkalns": 4652
+			},
+"Gaiziņkalns": {
+			"Gaiziņkalns": 0
 			}
 };
 
