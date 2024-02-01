@@ -71,7 +71,7 @@ a.active {
 }
 .art:hover{
 	color: black;
-	background: linear-gradient(to right, red, orange, yellow, cyan, blue, darkviolet);
+	background: linear-gradient(to right, red, orange, yellow, cyan, blue, darkviolet, blue, cyan, yellow, orange, red);
 	background-size: 200% 200%;
 	animation: rainbow 5s ease infinite;
 }
